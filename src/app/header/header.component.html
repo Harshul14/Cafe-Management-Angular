@@ -1,0 +1,25 @@
+<header>
+    <div class="container">
+        <a href="#" routerLink="/" class="logo">My Food Corner 🍽️</a>
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="/login">Login</a>
+                </li>
+                <li class="menu-container">
+                    <a routerLink="/dashboard">Manage</a>
+                    <div class="menu">
+                        <a class="profile" routerLink="/profile">Profile</a>
+                        <a class="profile" routerLink="/orders">Orders</a>
+                        <a>Logout</a>
+                    </div>
+                </li>
+                <li>
+                    <a routerLink="/cart-page" class="cart">
+                        Cart <span>{{cartQuantity}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
